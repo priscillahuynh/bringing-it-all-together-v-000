@@ -63,9 +63,10 @@ class Dog
     SELECT *
     FROM dogs
     WHERE name = ?
+    AND BREED = ?
     SQL
     DB[:conn].execute(sql, name, breed)
-    
+
     if !dog.empty?
       self.new_from_db(dog)
     else
