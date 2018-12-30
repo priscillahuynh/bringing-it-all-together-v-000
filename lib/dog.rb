@@ -80,7 +80,6 @@ class Dog
     FROM dogs
     WHERE name = ?
     SQL
-
     DB[:conn].execute(sql,name)
   end
 
