@@ -36,8 +36,7 @@ class Dog
       self
   end
 
-  def self.create(name:, breed:)
-    # sql = <<-SQL
-    # IF EXISTS TABLE
+  def self.create(hash)
+    dog = self.new 
   end
 end
