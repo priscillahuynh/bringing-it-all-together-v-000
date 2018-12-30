@@ -64,8 +64,8 @@ class Dog
     FROM dogs
     WHERE id = ?
     SQL
-
     DB[:conn].execute(sql, name, breed)
+    
     if !dog.empty?
       self.new_from_db(dog)
     else
