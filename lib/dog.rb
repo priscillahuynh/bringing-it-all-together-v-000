@@ -83,4 +83,8 @@ class Dog
 
     DB[:conn].execute(sql,name)
   end
+
+  def update 
+    
+  end
 end
