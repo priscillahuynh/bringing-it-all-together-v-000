@@ -82,5 +82,6 @@ class Dog
     SQL
 
     dog = DB[:conn].execute(sql,name)
+    dog
   end
 end
