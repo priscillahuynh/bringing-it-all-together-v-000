@@ -59,5 +59,6 @@ class Dog
       x.id = row[0]
       x.name = row[1]
       x.breed = row[2]
+    end
   end
 end
