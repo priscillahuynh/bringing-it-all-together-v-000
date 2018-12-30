@@ -66,7 +66,7 @@ class Dog
     AND breed = ?
     SQL
     dog = DB[:conn].execute(sql, name, breed)
-    if !dog.empty?
+    if !dog.empty? && !dog.id = nil
       self.new_from_db(dog.flatten)
     else
       dog = self.create(name: name, breed: breed)
