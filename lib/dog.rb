@@ -80,7 +80,7 @@ class Dog
     FROM dogs
     WHERE name = ?
     SQL
-    DB[:conn].execute(sql,name).flatten
+    DB[:conn].execute(sql,name)
   end
 
   def update
