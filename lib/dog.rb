@@ -54,11 +54,10 @@ class Dog
     end.first
   end
 
-  def self.new_from_db
-    new_dog = Dog.new(row)
-    new_dog.id = row[0]
-    new_dog.name = row[1]
-    new_dog.breed = row[2]
-    new_dog
+  def self.new_from_db(row)
+    self.new.tap do |x|
+      x.id = row[0]
+      x.name = row[1]
+      x.breed = row[2]
   end
 end
