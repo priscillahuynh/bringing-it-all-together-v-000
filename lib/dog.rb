@@ -58,7 +58,8 @@ class Dog
     self.new(id:row[0], name:row[1],breed:row[2])
   end
 
-  def self.find_or_create_by
-
+  def self.find_or_create_by(name:,breed:)
+    dog = DB[:conn].execute("SELECT * FROM songs WHERE name = ?")
+    
   end
 end
